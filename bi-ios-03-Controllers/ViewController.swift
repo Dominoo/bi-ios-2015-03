@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var segmented: UISegmentedControl!
+    
     /* override func loadView() {
         print("ahoj")
         self.view = UIView()
@@ -21,7 +23,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Root"
         
+        nextButton.addTarget(self, action: "goNext", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(
+       // self.navigationItem.titleView = UISlider()
+        
+    }
+    
+    func goNext() {
+        print("get next tapped")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -32,7 +45,8 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-
+        print(self.navigationItem.rightBarButtonItem)
+        print(self.navigationItem.titleView)
     }
     
 
@@ -52,5 +66,8 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func infoTapped(sender: AnyObject) {
+        print("info tapped")
+    }
 }
 

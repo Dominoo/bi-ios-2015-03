@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QEQ-qr-wd7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="32" y="36" width="348" height="21"/>
+                                    <rect key="frame" x="32" y="124" width="348" height="21"/>
                                 </variation>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3Vg-4A-IrN">
@@ -34,12 +34,20 @@
                                     <segment title="Green"/>
                                 </segments>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="149" y="73" width="103" height="29"/>
+                                    <rect key="frame" x="149" y="161" width="103" height="29"/>
                                 </variation>
                                 <connections>
                                     <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="eiI-1v-Npk"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmh-IS-1X7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Next"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="184" y="232" width="32" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -47,23 +55,50 @@
                             <mask key="subviews">
                                 <exclude reference="IbB-sf-I8w"/>
                                 <exclude reference="3Vg-4A-IrN"/>
+                                <exclude reference="Gmh-IS-1X7"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="IbB-sf-I8w"/>
                                 <include reference="3Vg-4A-IrN"/>
+                                <include reference="Gmh-IS-1X7"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Cxa-i8-tTG">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="wRj-3F-JCR">
+                            <connections>
+                                <action selector="infoTapped:" destination="BYZ-38-t0r" id="hgi-XL-9FX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="label" destination="IbB-sf-I8w" id="QcO-Yi-6Es"/>
+                        <outlet property="nextButton" destination="Gmh-IS-1X7" id="aT2-ZE-e8C"/>
                         <outlet property="segmented" destination="3Vg-4A-IrN" id="N4M-MA-NXD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279" y="257.25"/>
+            <point key="canvasLocation" x="1719" y="5.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BmA-Op-KxQ">
+            <objects>
+                <navigationController id="QEQ-qr-wd7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uGP-Zf-Y8f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dln-U7-ast"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qoz-ae-Li3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="30"/>
         </scene>
     </scenes>
 </document>
