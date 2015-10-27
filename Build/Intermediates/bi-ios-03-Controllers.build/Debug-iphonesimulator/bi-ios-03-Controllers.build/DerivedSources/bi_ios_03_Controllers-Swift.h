@@ -109,6 +109,7 @@ SWIFT_CLASS("_TtC21bi_ios_03_Controllers11AppDelegate")
 
 @class UISegmentedControl;
 @class UILabel;
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
@@ -116,7 +117,12 @@ SWIFT_CLASS("_TtC21bi_ios_03_Controllers14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified label;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedControl;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified showNextButton;
 - (void)viewDidLoad;
+- (void)showNextTapped;
+- (IBAction)infoTapped:(id __nonnull)sender;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)changeColor:(UISegmentedControl * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
