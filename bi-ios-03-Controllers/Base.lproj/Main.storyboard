@@ -87,9 +87,11 @@
                         <barButtonItem key="rightBarButtonItem" title="Info" id="PQ1-OG-xia">
                             <connections>
                                 <action selector="infoTapped:" destination="BYZ-38-t0r" id="W3R-hf-QkS"/>
+                                <segue destination="X6c-7v-wZ7" kind="presentation" modalPresentationStyle="formSheet" id="SXQ-Bh-LCg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <connections>
                         <outlet property="label" destination="eD4-1p-MNM" id="HvA-V4-V3l"/>
                         <outlet property="segmentedControl" destination="zki-gb-HRy" id="bXp-l4-OIa"/>
@@ -99,6 +101,103 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="355.5" y="314.25"/>
+        </scene>
+        <!--ModalVC-->
+        <scene sceneID="r4P-Ls-KBD">
+            <objects>
+                <viewController id="X6c-7v-wZ7" customClass="ModalVC" customModule="bi_ios_03_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ut6-r0-l1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="gNf-7d-kb1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VsV-7g-bhg">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocU-vV-bxE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Chci pryč"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="168" y="217" width="65" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="close:" destination="X6c-7v-wZ7" eventType="touchUpInside" id="YR8-UC-VJu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.2666666667" green="0.63921568630000003" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ocU-vV-bxE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ocU-vV-bxE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lf-By-5PG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174.5" y="-373.5"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="V9c-xR-AIw">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ddU-wz-hrG" customClass="SecondVC" customModule="bi_ios_03_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P4n-6a-ZIO"/>
+                        <viewControllerLayoutGuide type="bottom" id="9It-0v-zAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JR5-UM-F63">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Kpp-wZ-lOu">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="74" y="153" width="252" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="valueChanged:" destination="ddU-wz-hrG" eventType="valueChanged" id="vVg-TN-Nl2"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4Y-4c-hN3">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="144" y="109" width="112" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Kpp-wZ-lOu"/>
+                                <exclude reference="W4Y-4c-hN3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Kpp-wZ-lOu"/>
+                                <include reference="W4Y-4c-hN3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="valueLabel" destination="W4Y-4c-hN3" id="5zd-Ug-Wqm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jp4-kq-31g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="314.25"/>
         </scene>
     </scenes>
 </document>

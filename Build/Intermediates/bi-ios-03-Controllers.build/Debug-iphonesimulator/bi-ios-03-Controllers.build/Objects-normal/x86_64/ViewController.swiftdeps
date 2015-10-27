@@ -6,29 +6,30 @@ provides-nominal:
 provides-member:
 - ["C21bi_ios_03_Controllers14ViewController", ""]
 provides-dynamic-lookup:
-- "label"
+- "segmentedControl"
 - "infoTapped"
 - "viewWillAppear"
-- "showNextButton"
-- "didReceiveMemoryWarning"
-- "segmentedControl"
-- "showNextTapped"
 - "viewDidLoad"
 - "changeColor"
+- "label"
 - "viewDidAppear"
+- "showNextButton"
+- "showNextTapped"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIButton"
-- "UIViewController"
-- "Bool"
-- "UILabel"
-- !private "=="
-- "AnyObject"
 - "ViewController"
-- !private "UIColor"
+- "AnyObject"
 - !private "UIControlEvents"
 - !private "print"
-- !private "StringLiteralType"
+- !private "BooleanLiteralType"
+- "Bool"
 - "UISegmentedControl"
+- !private "UIColor"
+- "UIButton"
+- !private "=="
+- "UIViewController"
+- !private "StringLiteralType"
+- "UILabel"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
@@ -40,15 +41,19 @@ depends-member:
 - !private ["PSs9AnyObject", "greenColor"]
 - ["PSs9AnyObject", "infoTapped"]
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "instantiateViewControllerWithIdentifier"]
 - ["PSs9AnyObject", "label"]
+- !private ["PSs9AnyObject", "navigationController"]
 - !private ["PSs9AnyObject", "navigationItem"]
 - !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "pushViewController"]
 - !private ["PSs9AnyObject", "redColor"]
 - !private ["PSs9AnyObject", "rightBarButtonItem"]
 - ["PSs9AnyObject", "segmentedControl"]
 - !private ["PSs9AnyObject", "selectedSegmentIndex"]
 - ["PSs9AnyObject", "showNextButton"]
 - ["PSs9AnyObject", "showNextTapped"]
+- !private ["PSs9AnyObject", "storyboard"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "title"]
 - !private ["PSs9AnyObject", "titleView"]
@@ -71,15 +76,19 @@ depends-member:
 - !private ["PSs11CVarArgType", "greenColor"]
 - ["PSs11CVarArgType", "infoTapped"]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "instantiateViewControllerWithIdentifier"]
 - ["PSs11CVarArgType", "label"]
+- !private ["PSs11CVarArgType", "navigationController"]
 - !private ["PSs11CVarArgType", "navigationItem"]
 - !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "pushViewController"]
 - !private ["PSs11CVarArgType", "redColor"]
 - !private ["PSs11CVarArgType", "rightBarButtonItem"]
 - ["PSs11CVarArgType", "segmentedControl"]
 - !private ["PSs11CVarArgType", "selectedSegmentIndex"]
 - ["PSs11CVarArgType", "showNextButton"]
 - ["PSs11CVarArgType", "showNextTapped"]
+- !private ["PSs11CVarArgType", "storyboard"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "title"]
 - !private ["PSs11CVarArgType", "titleView"]
@@ -88,6 +97,7 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewWillAppear"]
 - ["PSs11CVarArgType", ""]
+- ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "redColor"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
@@ -100,15 +110,19 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "greenColor"]
 - ["PSs23CustomStringConvertible", "infoTapped"]
 - ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
 - ["PSs23CustomStringConvertible", "label"]
+- !private ["PSs23CustomStringConvertible", "navigationController"]
 - !private ["PSs23CustomStringConvertible", "navigationItem"]
 - !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "pushViewController"]
 - !private ["PSs23CustomStringConvertible", "redColor"]
 - !private ["PSs23CustomStringConvertible", "rightBarButtonItem"]
 - ["PSs23CustomStringConvertible", "segmentedControl"]
 - !private ["PSs23CustomStringConvertible", "selectedSegmentIndex"]
 - ["PSs23CustomStringConvertible", "showNextButton"]
 - ["PSs23CustomStringConvertible", "showNextTapped"]
+- !private ["PSs23CustomStringConvertible", "storyboard"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "title"]
 - !private ["PSs23CustomStringConvertible", "titleView"]
@@ -129,15 +143,19 @@ depends-member:
 - !private ["PSs9Equatable", "greenColor"]
 - ["PSs9Equatable", "infoTapped"]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "instantiateViewControllerWithIdentifier"]
 - ["PSs9Equatable", "label"]
+- !private ["PSs9Equatable", "navigationController"]
 - !private ["PSs9Equatable", "navigationItem"]
 - !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "pushViewController"]
 - !private ["PSs9Equatable", "redColor"]
 - !private ["PSs9Equatable", "rightBarButtonItem"]
 - ["PSs9Equatable", "segmentedControl"]
 - !private ["PSs9Equatable", "selectedSegmentIndex"]
 - ["PSs9Equatable", "showNextButton"]
 - ["PSs9Equatable", "showNextTapped"]
+- !private ["PSs9Equatable", "storyboard"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "title"]
 - !private ["PSs9Equatable", "titleView"]
@@ -157,15 +175,19 @@ depends-member:
 - !private ["PSs8Hashable", "greenColor"]
 - ["PSs8Hashable", "infoTapped"]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "instantiateViewControllerWithIdentifier"]
 - ["PSs8Hashable", "label"]
+- !private ["PSs8Hashable", "navigationController"]
 - !private ["PSs8Hashable", "navigationItem"]
 - !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "pushViewController"]
 - !private ["PSs8Hashable", "redColor"]
 - !private ["PSs8Hashable", "rightBarButtonItem"]
 - ["PSs8Hashable", "segmentedControl"]
 - !private ["PSs8Hashable", "selectedSegmentIndex"]
 - ["PSs8Hashable", "showNextButton"]
 - ["PSs8Hashable", "showNextTapped"]
+- !private ["PSs8Hashable", "storyboard"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "title"]
 - !private ["PSs8Hashable", "titleView"]
@@ -185,14 +207,17 @@ depends-member:
 - ["PSo8NSCoding", "infoTapped"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "label"]
+- !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "navigationItem"]
 - !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "redColor"]
 - !private ["PSo8NSCoding", "rightBarButtonItem"]
 - ["PSo8NSCoding", "segmentedControl"]
 - !private ["PSo8NSCoding", "selectedSegmentIndex"]
 - ["PSo8NSCoding", "showNextButton"]
 - ["PSo8NSCoding", "showNextTapped"]
+- !private ["PSo8NSCoding", "storyboard"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "titleView"]
@@ -211,11 +236,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "infoTapped"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "label"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - ["PSo26NSExtensionRequestHandling", "segmentedControl"]
 - ["PSo26NSExtensionRequestHandling", "showNextButton"]
 - ["PSo26NSExtensionRequestHandling", "showNextTapped"]
+- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
@@ -237,15 +265,19 @@ depends-member:
 - !private ["CSo8NSObject", "greenColor"]
 - ["CSo8NSObject", "infoTapped"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
 - ["CSo8NSObject", "label"]
+- !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "navigationItem"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "redColor"]
 - !private ["CSo8NSObject", "rightBarButtonItem"]
 - ["CSo8NSObject", "segmentedControl"]
 - !private ["CSo8NSObject", "selectedSegmentIndex"]
 - ["CSo8NSObject", "showNextButton"]
 - ["CSo8NSObject", "showNextTapped"]
+- !private ["CSo8NSObject", "storyboard"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleView"]
@@ -263,15 +295,19 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "greenColor"]
 - ["PSo16NSObjectProtocol", "infoTapped"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
 - ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "redColor"]
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - ["PSo16NSObjectProtocol", "segmentedControl"]
 - !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
 - ["PSo16NSObjectProtocol", "showNextButton"]
 - ["PSo16NSObjectProtocol", "showNextTapped"]
+- !private ["PSo16NSObjectProtocol", "storyboard"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleView"]
@@ -283,8 +319,10 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "description"]
 - !private ["PSo14NSSecureCoding", "greenColor"]
 - !private ["PSo14NSSecureCoding", "redColor"]
+- ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs21NilLiteralConvertible", "redColor"]
 - !private ["PSs13OptionSetType", "TouchUpInside"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Sq", "redColor"]
 - !private ["PSs16RawRepresentable", "TouchUpInside"]
@@ -307,12 +345,15 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "infoTapped"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "label"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - ["PSo21UIAppearanceContainer", "segmentedControl"]
 - !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
 - ["PSo21UIAppearanceContainer", "showNextButton"]
 - ["PSo21UIAppearanceContainer", "showNextTapped"]
+- !private ["PSo21UIAppearanceContainer", "storyboard"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "title"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -331,11 +372,14 @@ depends-member:
 - ["PSo18UIContentContainer", "infoTapped"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "label"]
+- !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "navigationItem"]
 - !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
 - ["PSo18UIContentContainer", "segmentedControl"]
 - ["PSo18UIContentContainer", "showNextButton"]
 - ["PSo18UIContentContainer", "showNextTapped"]
+- !private ["PSo18UIContentContainer", "storyboard"]
 - !private ["PSo18UIContentContainer", "title"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
@@ -354,6 +398,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["CSo16UINavigationItem", "rightBarButtonItem"]
 - !private ["CSo16UINavigationItem", "titleView"]
 - ["CSo11UIResponder", "AnyObject"]
@@ -370,12 +415,15 @@ depends-member:
 - ["CSo11UIResponder", "infoTapped"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "label"]
+- !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "navigationItem"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "pushViewController"]
 - ["CSo11UIResponder", "segmentedControl"]
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
 - ["CSo11UIResponder", "showNextButton"]
 - ["CSo11UIResponder", "showNextTapped"]
+- !private ["CSo11UIResponder", "storyboard"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "title"]
 - !private ["CSo11UIResponder", "view"]
@@ -390,17 +438,21 @@ depends-member:
 - ["PSo16UIStateRestoring", "infoTapped"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "label"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "navigationItem"]
 - !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
 - ["PSo16UIStateRestoring", "segmentedControl"]
 - ["PSo16UIStateRestoring", "showNextButton"]
 - ["PSo16UIStateRestoring", "showNextTapped"]
+- !private ["PSo16UIStateRestoring", "storyboard"]
 - !private ["PSo16UIStateRestoring", "title"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo12UIStoryboard", "instantiateViewControllerWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
@@ -410,12 +462,15 @@ depends-member:
 - ["PSo18UITraitEnvironment", "infoTapped"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "label"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
 - ["PSo18UITraitEnvironment", "segmentedControl"]
 - !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
 - ["PSo18UITraitEnvironment", "showNextButton"]
 - ["PSo18UITraitEnvironment", "showNextTapped"]
+- !private ["PSo18UITraitEnvironment", "storyboard"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "title"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -439,11 +494,14 @@ depends-member:
 - ["CSo16UIViewController", "infoTapped"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "label"]
+- !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "navigationItem"]
 - !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "pushViewController"]
 - ["CSo16UIViewController", "segmentedControl"]
 - ["CSo16UIViewController", "showNextButton"]
 - ["CSo16UIViewController", "showNextTapped"]
+- !private ["CSo16UIViewController", "storyboard"]
 - !private ["CSo16UIViewController", "title"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidAppear"]
@@ -463,11 +521,13 @@ depends-member:
 - ["C21bi_ios_03_Controllers14ViewController", "infoTapped"]
 - ["C21bi_ios_03_Controllers14ViewController", "init"]
 - ["C21bi_ios_03_Controllers14ViewController", "label"]
+- !private ["C21bi_ios_03_Controllers14ViewController", "navigationController"]
 - !private ["C21bi_ios_03_Controllers14ViewController", "navigationItem"]
 - !private ["C21bi_ios_03_Controllers14ViewController", "print"]
 - ["C21bi_ios_03_Controllers14ViewController", "segmentedControl"]
 - ["C21bi_ios_03_Controllers14ViewController", "showNextButton"]
 - ["C21bi_ios_03_Controllers14ViewController", "showNextTapped"]
+- !private ["C21bi_ios_03_Controllers14ViewController", "storyboard"]
 - !private ["C21bi_ios_03_Controllers14ViewController", "title"]
 - !private ["C21bi_ios_03_Controllers14ViewController", "view"]
 - ["C21bi_ios_03_Controllers14ViewController", "viewDidAppear"]
@@ -475,6 +535,7 @@ depends-member:
 - ["C21bi_ios_03_Controllers14ViewController", "viewWillAppear"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "backgroundColor"]
@@ -488,7 +549,7 @@ depends-nominal:
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
 - "PSs11CVarArgType"
-- !private "PSs28CustomDebugStringConvertible"
+- "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - "PSs8Hashable"
@@ -498,9 +559,9 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "PSs21NilLiteralConvertible"
+- "PSs21NilLiteralConvertible"
 - !private "PSs13OptionSetType"
-- !private "Sq"
+- "Sq"
 - !private "PSs16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
 - !private "PSs14SetAlgebraType"
@@ -515,17 +576,19 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - !private "CSo7UILabel"
+- !private "CSo22UINavigationController"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - !private "CSo18UISegmentedControl"
 - "PSo16UIStateRestoring"
+- !private "CSo12UIStoryboard"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - "C21bi_ios_03_Controllers14ViewController"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs21_ObjectiveCBridgeable"
-- !private "PSs12_Reflectable"
+- "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

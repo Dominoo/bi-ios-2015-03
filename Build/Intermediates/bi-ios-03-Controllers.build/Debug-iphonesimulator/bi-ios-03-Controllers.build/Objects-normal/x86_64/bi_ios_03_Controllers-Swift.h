@@ -107,11 +107,31 @@ SWIFT_CLASS("_TtC21bi_ios_03_Controllers11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISegmentedControl;
-@class UILabel;
-@class UIButton;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC21bi_ios_03_Controllers7ModalVC")
+@interface ModalVC : UIViewController
+- (void)viewDidLoad;
+- (IBAction)close:(id __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISlider;
+@class UILabel;
+
+SWIFT_CLASS("_TtC21bi_ios_03_Controllers8SecondVC")
+@interface SecondVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified valueLabel;
+- (void)loadView;
+- (IBAction)valueChanged:(UISlider * __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISegmentedControl;
+@class UIButton;
 
 SWIFT_CLASS("_TtC21bi_ios_03_Controllers14ViewController")
 @interface ViewController : UIViewController

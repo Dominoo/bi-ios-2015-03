@@ -42,6 +42,11 @@ class ViewController: UIViewController {
     
     func showNextTapped() {
         print("Show Next Tapped")
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SecondVC")
+        if let controller = vc {
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+        
     }
     
     @IBAction func infoTapped(sender: AnyObject) {
