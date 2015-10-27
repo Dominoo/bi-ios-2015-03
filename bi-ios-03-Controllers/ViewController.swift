@@ -9,17 +9,48 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var segmented: UISegmentedControl!
+    /* override func loadView() {
+        print("ahoj")
+        self.view = UIView()
+        view.backgroundColor = UIColor.whiteColor()
+    } */
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        changeColor(segmented)
+       // segmented.selectedSegmentIndex = 1
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
 
+    @IBAction func changeColor(sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            view.backgroundColor = .redColor()
+        } else {
+            self.view.backgroundColor = UIColor.greenColor()
+        }
+        
+        self.label.text = view.backgroundColor?.description
+        
+    }
 
 }
 
