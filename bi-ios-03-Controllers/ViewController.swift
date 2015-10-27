@@ -24,16 +24,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Root"
-        
         nextButton.addTarget(self, action: "goNext", forControlEvents: UIControlEvents.TouchUpInside)
         
-        
+      //  nextButton.onTap { print("get next") }        
         //navigationItem.leftBarButtonItem = UIBarButtonItem(
        // self.navigationItem.titleView = UISlider()
         
     }
     
     func goNext() {
+        
+        let vc = storyboard?.instantiateViewControllerWithIdentifier("SecondVC")
+        if let viewController = vc {
+            navigationController?.pushViewController(viewController, animated: true)
+            //self.parentViewController?.showDetailViewController(viewController, sender: self)
+            
+        }
         print("get next tapped")
     }
     

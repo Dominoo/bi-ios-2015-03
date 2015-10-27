@@ -13,6 +13,8 @@
 		B45BBB0D1BDF524E00A4F9CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45BBB0C1BDF524E00A4F9CA /* Assets.xcassets */; };
 		B45BBB101BDF524E00A4F9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45BBB0E1BDF524E00A4F9CA /* LaunchScreen.storyboard */; };
 		B45BBB1B1BDF524E00A4F9CA /* bi_ios_03_ControllersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BBB1A1BDF524E00A4F9CA /* bi_ios_03_ControllersUITests.swift */; };
+		B45BBB2A1BDF7A9B00A4F9CA /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BBB291BDF7A9B00A4F9CA /* ModalViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B45BBB2C1BDF7CAF00A4F9CA /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45BBB2B1BDF7CAF00A4F9CA /* SecondVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B45BBB161BDF524E00A4F9CA /* bi-ios-03-ControllersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bi-ios-03-ControllersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45BBB1A1BDF524E00A4F9CA /* bi_ios_03_ControllersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bi_ios_03_ControllersUITests.swift; sourceTree = "<group>"; };
 		B45BBB1C1BDF524E00A4F9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45BBB291BDF7A9B00A4F9CA /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		B45BBB2B1BDF7CAF00A4F9CA /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				B45BBB0C1BDF524E00A4F9CA /* Assets.xcassets */,
 				B45BBB0E1BDF524E00A4F9CA /* LaunchScreen.storyboard */,
 				B45BBB111BDF524E00A4F9CA /* Info.plist */,
+				B45BBB291BDF7A9B00A4F9CA /* ModalViewController.swift */,
+				B45BBB2B1BDF7CAF00A4F9CA /* SecondVC.swift */,
 			);
 			path = "bi-ios-03-Controllers";
 			sourceTree = "<group>";
@@ -197,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45BBB081BDF524E00A4F9CA /* ViewController.swift in Sources */,
+				B45BBB2A1BDF7A9B00A4F9CA /* ModalViewController.swift in Sources */,
+				B45BBB2C1BDF7CAF00A4F9CA /* SecondVC.swift in Sources */,
 				B45BBB061BDF524E00A4F9CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +393,7 @@
 				B45BBB211BDF524E00A4F9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B45BBB221BDF524E00A4F9CA /* Build configuration list for PBXNativeTarget "bi-ios-03-ControllersUITests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +402,7 @@
 				B45BBB241BDF524E00A4F9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
