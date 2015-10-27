@@ -107,13 +107,18 @@ SWIFT_CLASS("_TtC21bi_ios_03_Controllers11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISegmentedControl;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC21bi_ios_03_Controllers14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified label;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedControl;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)changeColor:(UISegmentedControl * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
